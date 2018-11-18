@@ -1,0 +1,11 @@
+plugins {
+    id 'com.github.blindpirate.gogradle' version '0.8.0'
+}
+
+golang {
+    packagePath = 'goexample'
+}
+
+build {
+    outputLocation = './bin/${PROJECT_NAME}${GOEXE}'
+}
